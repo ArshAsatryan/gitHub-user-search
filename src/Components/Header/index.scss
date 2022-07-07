@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 45%;
+    height: 100px;
+    margin-bottom: 15px;
+    // border:2px solid red;
+    color: white;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 8px;
+    width: 20%;
+    height: 40%;
+    border: none;
+    // border:2px solid red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#light .header{
+    background-color:white;
+    color: black;
+      & > div {
+        background-color:white;
+    color: black;
+      }
+  }
+  
+  #dark .header{
+    background-color: black;
+    color: white;
+      & > div {
+        background-color: black;
+        color: white;
+      }
+  }

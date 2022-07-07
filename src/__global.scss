@@ -1,0 +1,43 @@
+@import './_variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace
+}
+
+.App {
+    text-align: center;
+    height: 100vh;
+    min-width: 100%;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+  }
+
+  #light .App {
+    background-color: white;
+    color:black
+  }
+  
+  #dark .App {
+    background-color: $black;
+    color:white
+  }
+  
+  
+  #light  {
+    background-color: white;
+    color:$black
+  }
+  
+  #dark {
+    background-color:$black;
+    color:white;
+  }
+  
+  
