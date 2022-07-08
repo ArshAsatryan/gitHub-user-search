@@ -10,7 +10,7 @@ const UserInfo = ({data, loading, error}) => {
   const notAvaible = <span style={{opacity: 0.4}}>Not Avaiable</span>
   return (
     <>
-        {data && <div className='container__user'>
+        {data?.login && <div className='container__user'>
                       <div className='container__user--userInfo'>
                           <div className='container__user--avatar'>
                             <img src={data.avatar_url} alt="gitHub avatar"/>
@@ -22,7 +22,7 @@ const UserInfo = ({data, loading, error}) => {
                           </div>
                           <div className='container__user--joined'>
                              <span>Joined</span>
-                             <span>{data.created_at.toString().slice(0, 10)}</span>
+                             <span>{data.created_at && data.created_at.toString().slice(0, 10)}</span>
                           </div>
                       </div>
                       <div className='container__user--action' >

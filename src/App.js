@@ -61,9 +61,11 @@ const App = () => {
   return (
     
         <div className="App" id={theme}>
-            <Header onClick={toggleTheme} theme={theme}/>
-            <Search onUser={onUser}/>
-            <UserInfo data={data ? data : ''}  error={error ? error : ''} loading={loading ? loading : ''} />
+            <div className="container__github__user__search">
+                <Header onClick={toggleTheme} theme={theme}/>
+                <Search onUser={onUser}/>
+                <UserInfo data={data ? data : ''}  error={error ? error : ''} loading={loading ? loading : ''} />
+            </div>
         </div>
   
   )
